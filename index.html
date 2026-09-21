@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flores Amarillas 💛</title>
+  <meta name="description" content="Un pequeño jardín hecho para ti.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="petals" aria-hidden="true"></div>
+
+  <main class="page">
+    <section class="hero">
+      <div class="sun-glow"></div>
+
+      <div class="eyebrow">21 DE SEPTIEMBRE</div>
+      <h1>Hoy te regalo<br><span>flores amarillas</span></h1>
+      <p class="intro">
+        Porque hay regalos que no necesitan una ocasión perfecta.
+        Solo necesitan decir: <strong>pensé en ti.</strong>
+      </p>
+
+      <button class="main-btn" id="flowerBtn">
+        <span>🌻</span> Abrir mi regalo <span>🌻</span>
+      </button>
+
+      <div class="scroll-hint">↓ hay algo esperándote ↓</div>
+    </section>
+
+    <section class="garden" id="garden">
+      <div class="section-tag">PARA TI</div>
+      <h2>Un pequeño jardín para una persona especial</h2>
+
+      <div class="bouquet" id="bouquet">
+        <div class="stem stem1"></div>
+        <div class="stem stem2"></div>
+        <div class="stem stem3"></div>
+        <div class="stem stem4"></div>
+        <div class="flower f1">🌻</div>
+        <div class="flower f2">🌻</div>
+        <div class="flower f3">🌻</div>
+        <div class="flower f4">🌻</div>
+        <div class="leaf l1">🌿</div>
+        <div class="leaf l2">🌿</div>
+        <div class="leaf l3">🌿</div>
+      </div>
+
+      <p class="garden-text">
+        Si pudiera entregarte un ramo ahora mismo, probablemente estaría lleno
+        de flores amarillas. Pero como una página también puede abrazar,
+        hice este pequeño lugar para ti.
+      </p>
+
+      <button class="secondary-btn" id="letterBtn">💌 Hay una carta para ti</button>
+    </section>
+
+    <section class="message">
+      <div class="card">
+        <div class="card-flower">🌻</div>
+        <div class="section-tag">UNA COSITA</div>
+        <h2>Que nunca se te olvide</h2>
+        <p>
+          El amarillo representa alegría, luz y cariño.
+          Y eso es exactamente lo que quería dejarte hoy:
+          un pedacito de luz para que lo guardes contigo.
+        </p>
+        <div class="signature">Con cariño, <span>❤️</span></div>
+      </div>
+    </section>
+
+    <section class="memory">
+      <div class="section-tag">NUESTRO RINCÓN</div>
+      <h2>Y si quieres hacerlo más nuestro...</h2>
+      <div class="photo-frame">
+        <img src="images/recuerdo.jpg" alt="Nuestro recuerdo" onerror="this.style.display='none'; this.parentElement.classList.add('empty');">
+        <div class="photo-placeholder">
+          <span>📸</span>
+          <strong>Tu foto aquí</strong>
+          <small>Guarda una imagen como<br><b>images/recuerdo.jpg</b></small>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="final-flower">🌻</div>
+      <h2>Feliz 21 de septiembre 💛</h2>
+      <p>
+        Que hoy recibas flores amarillas,<br>
+        pero sobre todo, que recibas razones para sonreír.
+      </p>
+      <button class="heart-btn" id="heartBtn">❤️</button>
+      <div class="heart-counter" id="counter">0 corazones enviados</div>
+    </section>
+  </main>
+
+  <div class="modal" id="letterModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" id="closeModal" aria-label="Cerrar">×</button>
+      <div class="modal-flower">🌻</div>
+      <div class="section-tag">PARA TI</div>
+      <h2>Mi carta</h2>
+      <p>
+        Hoy quería darte algo sencillo, pero diferente.
+        Unas flores amarillas que, aunque estén hechas de píxeles,
+        llevan una intención muy real: hacerte sonreír.
+      </p>
+      <p>
+        Espero que cuando veas esta página recuerdes que hay alguien
+        que pensó en ti y quiso convertir unos minutos de su día
+        en un pequeño detalle para ti.
+      </p>
+      <p>
+        Guarda estas flores cuando quieras volver a este momento.
+        🌻💛
+      </p>
+      <div class="signature">Siempre, <span>❤️</span></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
